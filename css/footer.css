@@ -1,0 +1,155 @@
+footer {
+	display: block;
+	width: 100%;
+	background-color:#f6f9fa;
+}
+.bili-post {
+	width: 100%;
+	height:160px;
+	background-color:#f6f9fa;
+	margin-bottom: 10px;
+}
+.bili-post ul {
+}
+.bili-post ul li {
+	float: left;
+	display: block;
+	margin-top: 35px;
+	margin-bottom: 10px;
+	width:320px;
+	height: 115px;
+	border-right: 1px solid  #e5e9ef;
+}
+.bili-post ul li:nth-child(2){
+	width: 320px;
+	padding-left: 20px;
+	padding-right: 30px;
+
+}
+.bili-post ul li:nth-child(3){
+	width: 260px;
+	padding-left: 20px;
+}
+.tips {
+	margin-bottom: 22px;
+	color: #99a2aa;
+}
+.card {
+	display: inline-block;
+	width: 100px;
+	height: 12px;
+	line-height: 24px;
+
+}
+.card > a {
+	color: #000;
+}
+
+.pic {
+	display:inline-block;
+	width: 82px;
+	height: 80px;
+}
+.bilipost .icon {
+	display: inline-block;
+	width: 60px;
+	height: 60px;
+}
+.icon-phone {
+	display: inline-block;
+	width: 60px;
+	height: 60px;
+	background-position:-1024px -194px;
+}
+.icon-weibo {
+	display: inline-block;
+	width: 60px;
+	height: 60px;
+	background-position: -1090px -322px;
+}
+.icon-weixin {
+	display: inline-block;
+	width: 60px;
+	height: 60px;
+	background-position:-1090px -66px;
+}
+em {
+	display: block;
+}
+.bili-partner {
+	width: 100%;
+	background-color:#f6f9fa;
+}
+.partner-left {
+	float: left;
+	width: 100px;
+	height: 165px;
+	margin-bottom: 100px;
+}
+.partner-left .p1 {
+	display: block;
+	width: 100px;
+	height:80px;
+	background:url(../images/partner.png) no-repeat;
+}
+.partner-left .p2 {
+	display: block;
+	width: 100px;
+	height:40px;
+	background:url(../images/parenter2.png) no-repeat;
+	background-size:100px 40px;
+}
+.partner-left .p3 {
+	display: block;
+	width: 100px;
+	height:40px;
+	margin-top: 10px;
+	background:url(../images/websafe.png) no-repeat;
+	background-size:100px 40px;
+}
+.partner-right {
+	float: right;
+	width: 850px;
+	height: 125px;
+	margin-left:10px;
+	/*background-color: red;*/
+	color:#99a2aa;
+}
+.partner-right a {
+	color:#99a2aa;
+}
+.partner-right a:hover {
+	color: #000;
+}
+.partner-right p {
+	font-size: 12px;
+	line-height: 25px;
+}
+.icon-footer-report {
+	display: inline-block;
+	vertical-align: middle;
+	width: 16px;
+	height: 16px;
+	margin-left: 3px;
+ 	background-position: -1367px -89px;
+}
+.icon-footer-police {
+	display: inline-block;
+	vertical-align: middle;
+	width: 14px;
+	height: 14px;
+	margin-left: 3px;
+ 	background: url(../images/beiantubiao.png);
+}
+.icon-report {
+	display: inline-block;
+	vertical-align: middle;
+	width: 16px;
+	height: 16px;
+ 	background: url(../images/12377.png);
+ 	background-size: 16px 16px;
+}
+.partner-right .p-style {
+	height:30px;
+	line-height: 30px;
+}

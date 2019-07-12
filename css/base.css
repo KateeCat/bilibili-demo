@@ -1,0 +1,238 @@
+@charset "UTF-8";
+
+/*页面初始化*/
+body,h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td { margin:0; padding:0; }
+body, button, input, select, textarea { font:12px/1.5 tahoma, arial, \5b8b\4f53;margin:0;padding: 0; }
+h1, h2, h3, h4, h5, h6{ font-size:100%; }
+address, cite, dfn, em, var { font-style:normal; }
+code, kbd, pre, samp { font-family:couriernew, courier, monospace; }
+small{ font-size:12px; }
+ul, ol { list-style:none; }
+a { text-decoration:none; }
+a:hover { text-decoration:none; }
+sup { vertical-align:text-top; }
+sub{ vertical-align:text-bottom; }
+legend { color:#000; }
+fieldset, img { border:0;}
+button, input, select, textarea { font-size:100%; border: none;outline: none;margin:0;padding: 0}
+table { border-collapse:collapse; border-spacing:0; }
+i {font-style: normal}
+/*结构布局*/
+body {
+  font: 12px Helvetica Neue,Helvetica,Arial,Microsoft Yahei,Hiragino Sans GB,Heiti SC,WenQuanYi Micro Hei,sans-serif;
+ }
+
+main {
+  position: relative;
+  margin: 0 auto;
+  width: 1160px; }
+
+.w {
+	margin: 0 auto;
+	width: 980px;
+}
+
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  *zoom: 1;
+}
+
+
+/*通用部件*/
+.videoBox {
+  position: relative;
+  display: block;
+  width: 160px;
+  height: 100px;
+  border-radius: 4px;
+}
+.videoBox  img {
+    width: 160px;
+    height: 100px;
+    border-radius: 4px;
+}
+
+.videoBox:hover .clock {
+  display: block; }
+
+.videoBox-mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 160px;
+  height: 100px;
+  border-radius: 4px;
+  background: rgba(0, 0, 0, 0);
+  transition: all .3s; }
+
+.time .videoBox-mask > span:first-child {
+  position: absolute;
+  opacity: 0;
+  bottom: 2px;
+  left: 6px;
+  height: 12px;
+  line-height: 12px;
+  padding: 0 5px 1px 0;
+  color: #fff;
+  transition: all .3s; }
+
+.time:hover .videoBox-mask {
+  background: rgba(0, 0, 0, 0.2); }
+  .time:hover .videoBox-mask span:first-child {
+    opacity: 1; }
+
+.clock {
+  position: absolute;
+  display: none;
+  right: 6px;
+  bottom: 4px;
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+  background-image: url(../images/clock.png); }
+
+.clock:after {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  top: -32px;
+  left: -21px;
+  content: '稍后再看';
+  width: 64px;
+  height: 26px;
+  color: #fff;
+  line-height: 26px;
+  text-align: center;
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.7); }
+
+.clock:hover:after {
+  display: block; }
+
+
+.txtOver {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+
+.txt {
+	word-wrap: break-word;
+	overflow: hidden;
+	color: #000;
+}
+.txtRank {
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.txtBreak {
+  word-break: break-all;
+  word-wrap: break-word;
+  overflow: hidden; }
+
+.advertise {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 32px;
+	height: 20px;
+	background: url(../images/ad.png);
+}
+
+.icon {
+	background: url(../images/icons.png);
+}
+
+.icon-more {
+	display: inline-block;
+    width: 12px;
+    height: 13px;
+    vertical-align: top;
+    transition: all .5s;
+    background-position: -475px -215px;
+    margin-top: 3px;
+	transform: translateX(0);
+	transition: all 0.4s;
+}
+
+/*导航下划线+三角形*/
+.on {
+    border-color: #00a1d6;
+    color: #00a1d6;
+}
+.bili-tap > li:after {
+    content: "";
+    opacity: 0;
+    position: absolute;
+    left: 50%;
+    margin-left: -3px;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 3px solid #00a1d6;
+    border-top: 0;
+    border-left: 3px dashed transparent;
+    border-right: 3px dashed transparent;
+}
+.bili-tap > li.on:after {
+	opacity: 1;
+}
+
+.bili-item {
+	float: left;
+    position: relative;
+    height: 20px;
+    line-height: 20px;
+    cursor: pointer;
+    padding: 1px 0 2px;
+    margin-left: 12px;
+    transition: .2s;
+    border-bottom: 1px solid transparent;
+}
+/*bili-dropdown*/
+.bili-dropdown {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    background-color: #fff;
+    cursor: pointer;
+    padding: 0 7px;
+    height: 22px;
+    line-height: 22px;
+    border: 1px solid #ccd0d7;
+    border-radius: 4px;
+    float: right;
+}
+.icon-arrow-down {
+    display: inline-block;
+    margin-left: 5px;
+    width: 12px;
+    height: 6px;
+    background-position: -475px -157px;
+}
+.dropdown-list {
+	position:absolute;
+	left: -1px;
+	top: 22px;
+	width: 100%;
+    border: 1px solid #ccd0d7;
+    z-index: 10;
+    border-top: none;
+    background-color: #fff;
+}
+.dropdown-item {
+	padding-left: 5px;
+	cursor: pointer;
+	display: none;
+}
+.bili-dropdown:hover .dropdown-item {
+	display: block;
+}
