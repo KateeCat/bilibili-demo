@@ -764,7 +764,6 @@
     line-height:22px;
 }
 .heightLine-right .rank-content .icon-name {
-    float: left;
     max-width: 110px;
     min-width: 80px;
     color: #222;
@@ -779,9 +778,13 @@
     line-height: 16px;
 }
 .heightLine-right .rank-content .icon-title {
+	display: block;
     margin-bottom: 0;
     color: #99a2aa;
     line-height: 16px;
+    width:100%;
+    height: 16px;
+    margin-top: 4px;
 }
 .heightLine-right .rank-content .viewIcon {
 	display: inline-block;
@@ -1157,4 +1160,92 @@
 }
 .heightLine-right .funju .rank-item .box-item {
 	height: 20px;
+}
+
+
+/*notice*/
+.bili-notice {
+	width: 100%;
+	height: 56px;
+	position: fixed;
+	z-index: 100;
+	left: 0;
+	bottom: 0;
+	background-color: #fff;
+	box-shadow: 0 -1px 2px 0 #e7e7e7;
+}
+.bili-notice .bili-wrap {
+	position: relative;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 56px;
+	font-size: 16px;
+}
+.bili-notice .bili-wrap img {
+	margin-right: 5px;
+	vertical-align: middle;
+}
+.btn-close {
+	position: absolute;
+    cursor: pointer;
+    right: 0;
+    top: 20px;
+    width: 13px;
+    height: 13px;
+    background-position: -538px -1881px;
+}
+
+/*sideBar*/
+.sideBar {
+	position: fixed;
+	right: 5%;
+	top: 50%;
+	width: 50px;
+	height: 100%;
+	transition: all 0.3s;
+	text-align: center;
+}
+.sideBar-list {
+    position: relative;
+    width: 48px;
+    background-color: #f6f9fa;
+    border: 1px solid #e5e9ef;
+    border-radius: 4px;
+}
+.sideBar-item {
+	position: relative;
+	display: inline-block;
+    width: 48px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    transition: background-color .3s,color .3s;
+    cursor: pointer;
+}
+.sideBar-item:hover {
+	background-color:#00a1d6;
+	color: #fff;
+}
+.current{
+	background-color:#00a1d6;
+	color: #fff;
+}
+.sideBar-line {
+    height: 9px;
+    width: 30px;
+    margin: 0 auto;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+}
+.sideBar-goUp {
+    height: 48px;
+    background: url(../images/icons.png) -648px -72px no-repeat;
+    background-color: #f6f9fa;
+    border: 1px solid #e5e9ef;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.sideBar-goUp:hover {
+	background-color:#00a1d6;
+	background-position: -714px -72px;
 }

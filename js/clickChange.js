@@ -46,6 +46,12 @@ $(function (){
     	 // background: "#b8c0cc"
     });
 
+    /*关闭notice*/
+
+    $("#close-notice").click(function (){
+    	$(".bili-notice").css("display","none");
+    })
+
 })
 
 

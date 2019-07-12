@@ -305,7 +305,7 @@ nav {
 		width: 32px;
 		height: 32px;
 		background: url(../images/icons.png) -660px -721px no-repeat;
-        cursor: pointer; }
+        cursor: pointer;
     }
 .header-content .rankAndSearch > form > input:last-child:hover {
         background-position: -725px -721px;

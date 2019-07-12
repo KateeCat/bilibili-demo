@@ -44,7 +44,9 @@ footer {
 .card > a {
 	color: #000;
 }
-
+.card > a:hover {
+	color:#00a1d6;
+}
 .pic {
 	display:inline-block;
 	width: 82px;
