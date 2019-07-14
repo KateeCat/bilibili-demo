@@ -52,6 +52,14 @@ $(function (){
     	$(".bili-notice").css("display","none");
     })
 
+
+    /*点击新动态切换*/
+		var biliItem = $('.bili-tap').eq(1).children('.bili-item');
+		biliItem.click(function(){
+			$(this).addClass('on').siblings().removeClass('on');
+			var index = $(this).index();
+			$(".BigVideo .video-live").eq(index).fadeIn().show().siblings().hide();
+		})
 })
 
 
